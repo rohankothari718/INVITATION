@@ -77,7 +77,7 @@
                     
                     <div class="flex items-center gap-4 bg-stone-950 p-3 rounded-xl border border-stone-900 w-fit">
                         <div class="bg-white p-2 rounded-lg inline-block overflow-hidden shrink-0">
-                            <img src="page.jpeg" 
+                            <img src="page2.jpeg" 
                                  alt="Venue Location QR Code" 
                                  class="w-[90px] h-[90px] block object-contain mix-blend-multiply">
                         </div>
@@ -89,45 +89,4 @@
             </div>
         </div>
 
-        <div class="pt-8 border-t border-stone-900 text-xs text-stone-500 space-y-1">
-            <p class="font-luxury tracking-widest text-amber-400/60 uppercase">With Best Compliments From:</p>
-            <p class="font-medium text-stone-400 tracking-wide">Kothari Family</p>
-        </div>
-        
-    </main>
-
-    <div class="h-12"></div>
-
-    <script>
-        // Set exact countdown date targeting Sunday, June 28, 2026 at 09:00:00 AM
-        const targetDate = new Date("Jun 28, 2026 09:00:00").getTime();
-
-        const timerInterval = setInterval(function() {
-            const now = new Date().getTime();
-            const difference = targetDate - now;
-
-            const d = Math.floor(difference / (1000 * 60 * 60 * 24));
-            const h = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-            const s = Math.floor((difference % (1000 * 60)) / 1000);
-
-            if(document.getElementById("days")) {
-                document.getElementById("days").innerHTML = d < 10 ? "0" + d : d;
-                document.getElementById("hours").innerHTML = h < 10 ? "0" + h : h;
-                document.getElementById("minutes").innerHTML = m < 10 ? "0" + m : m;
-                document.getElementById("seconds").innerHTML = s < 10 ? "0" + s : s;
-            }
-
-            if (difference < 0) {
-                clearInterval(timerInterval);
-                if(document.getElementById("days")) {
-                    document.getElementById("days").innerHTML = "00";
-                    document.getElementById("hours").innerHTML = "00";
-                    document.getElementById("minutes").innerHTML = "00";
-                    document.getElementById("seconds").innerHTML = "00";
-                }
-            }
-        }, 1000);
-    </script>
-</body>
-</html>
+        <div class="pt-8 border-t border-stone-900 text-xs text-stone
